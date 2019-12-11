@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+// tslint:disable-next-line: max-line-length
+import { Component, OnInit } from '@angular/core';
+// tslint:disable-next-line: no-conflicting-lifecycle
 
+// tslint:disable-next-line: no-conflicting-lifecycle
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+
 })
-export class AppComponent {
-  title = 'kontrosha';
+// tslint:disable-next-line: max-line-length
+export class AppComponent implements OnInit {
+  constructor() {
+  }
+  title = 'hek';
+
+  ngOnInit() {
+
+  }
 }
+
+

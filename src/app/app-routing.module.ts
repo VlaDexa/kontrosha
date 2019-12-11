@@ -2,7 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
-const routes: Routes = [];
+import { KostilComponent } from './kostil/kostil.component';
+import { InputerComponent } from './inputer/inputer.component';
+
+
+const routes: Routes = [
+  {path: '', component: InputerComponent},
+  {path: 'second', component: KostilComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

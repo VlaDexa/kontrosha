@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kontrosha": {
+    "hek": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kontrosha",
+            "outputPath": "dist/hek",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kontrosha:build"
+            "browserTarget": "hek:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kontrosha:build:production"
+              "browserTarget": "hek:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kontrosha:build"
+            "browserTarget": "hek:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kontrosha:serve"
+            "devServerTarget": "hek:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "kontrosha:serve:production"
+              "devServerTarget": "hek:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "kontrosha"
+  "defaultProject": "hek"
 }
